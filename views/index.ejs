@@ -1,0 +1,16 @@
+<ul>
+    <%if (newListItem) { %>
+        <% for (var i = 0; i < newListItem.length; i++) { %>
+            <%= newListItem[i].title %>
+            <br>
+            <img src="<%= newListItem[i].image %>" alt=""/>
+            <br>
+            <iframe width="300" height="300"
+                src="<%= newListItem[i].url %>">
+            </iframe>
+            <br>
+            <br>
+            <br>
+        <% } %>
+    <% } %>
+ </ul>
